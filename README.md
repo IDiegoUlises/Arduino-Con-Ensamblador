@@ -29,7 +29,7 @@ void loop()
 }
 ```
 
-# Codigo en Ensamblador(led.S)
+# Codigo en Ensamblador (led.S)
 ```c++
 ;---------------
 ;Codigo en Ensamblador
