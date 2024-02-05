@@ -8,20 +8,18 @@ Que ventajas tiene escribir codigo en ensamblador, las principales ventajas es q
 
 Codigo ino
 ```c++
-//-------------------------
-// C Code for Blinking LED
-//-------------------------
+//Codigo en C para parpadeo de un led
 extern "C"
 {
   void start();
   void led(byte);
 }
-//----------------------------------------------------
+
 void setup()
 {
   start();
 }
-//----------------------------------------------------
+
 void loop()
 {
   led(1);
