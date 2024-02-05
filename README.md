@@ -27,7 +27,7 @@ void loop()
 }
 ```
 
-codigo en asamblador
+codigo en ensamblador
 ```c++
 ;---------------
 ;Codigo en Ensamblador
