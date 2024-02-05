@@ -2,6 +2,10 @@
 
 Que ventajas tiene escribir codigo en ensamblador, las principales ventajas es que las instrucciones como digitalwrite se demoran mientras que con ensamblador se hace mucho mas rapido aumenta la velocidad de las instrucciones y ademas ocupa menos memoria el programa
 
+* Se tienen que crear dos archivos con el mismo nombre
+* uno con la extension led.ino que contiene la funcion principal y el segundo led.S que contiene el codigo en ensamblador
+* importante led.S la extension es en mayusculas en caso que se escriba en minusculas no reconocera el archivo 
+
 Codigo ino
 ```c++
 //-------------------------
