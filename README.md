@@ -32,43 +32,43 @@ void loop()
 codigo en asamblador
 ```c++
 ;---------------
-; Assembly Code
+;Codigo en Ensamblador
 ;---------------
 #define __SFR_OFFSET 0x00
 #include "avr/io.h"
 ;------------------------
-.global start
+.global start                 ;variables globales para ser llamadas desde la funcion principal                
 .global led
 ;------------------------
 start:
-    SBI   DDRB, 4             ;set PB4 (D12) as o/p
-    RET                       ;return to setup() function
+    SBI   DDRB, 4             ;configurar PB4(D12) como salida digital
+    RET                       ;volver a la función setup()
 ;---------------------------------------------------------------------------
 led:
-    CPI   R24, 0x00           ;value in R24 passed by caller compared with 0
-    BREQ  ledOFF              ;jump (branch) if equal to subroutine ledOFF
-    SBI   PORTB, 4            ;set D12 to high
-    RCALL myDelay
-    RET                       ;return to loop() function
+    CPI   R24, 0x00           ;valor en R24 actual por el valor que llama en comparación con 0
+    BREQ  ledOFF              ;saltar (branch) si es igual a la subrutina ledOFF
+    SBI   PORTB, 4            ;establecer D12 en alto(HIGH)
+    RCALL myDelay             ;llama a la funcion de retardo
+    RET                       ;volver a la función loop()
 ;---------------------------------------------------------------------------
 ledOFF:
-    CBI   PORTB, 4            ;set D12 to low
-    RCALL myDelay
-    RET                       ;return to loop() function
+    CBI   PORTB, 4            ;establece D12 en bajo
+    RCALL myDelay             ;llama a la funcion de retardo
+    RET                       ;volver a la función loop()
 ;---------------------------------------------------------------------------
-.equ  delayVal, 10000         ;initial count value for inner loop
+.equ  delayVal, 10000         ;valor de recuento inicial para el bucle interno
 ;---------------------------------------------------------------------------
 myDelay:
-    LDI   R20, 100            ;initial count value for outer loop
+    LDI   R20, 100            ;valor de conteo inicial para el bucle externo
 outerLoop:
-    LDI   R30, lo8(delayVal)  ;low byte of delayVal in R30
-    LDI   R31, hi8(delayVal)  ;high byte of delayVal in R31
+    LDI   R30, lo8(delayVal)  ;byte low de delayVal en R30
+    LDI   R31, hi8(delayVal)  ;byte high de delayVal en R31
 innerLoop:
-    SBIW  R30, 1              ;subtract 1 from 16-bit value in R31, R30
-    BRNE  innerLoop           ;jump if countVal not equal to 0
+    SBIW  R30, 1              ;restar 1 del valor de 16 bits en R31, R30
+    BRNE  innerLoop           ;saltar si countVal no es igual a 0
     ;--------------
-    SUBI  R20, 1              ;subtract 1 from R20
-    BRNE  outerLoop           ;jump if R20 not equal to 0
+    SUBI  R20, 1              ;restar 1 de R20
+    BRNE  outerLoop           ;saltar si R20 no es igual a 0
     RET
 ;---------------------------------------------------------------------------
 ```
