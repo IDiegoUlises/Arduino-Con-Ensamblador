@@ -1,6 +1,6 @@
 # Arduino Con Ensamblador
 
-Que ventajas tiene escribir codigo en ensamblador, las principales ventajas es que las instrucciones como digitalwrite se demoran mientras que con ensamblador se hace mucho mas rapido aumenta la velocidad de las instrucciones y ademas ocupa menos memoria el programa
+Que ventajas tiene escribir codigo en ensamblador las principales ventajas es que las instrucciones como digitalwrite se demoran mientras que con ensamblador se hace mucho mas rapido aumenta la velocidad de las instrucciones y ademas ocupa menos memoria el programa
 
 * Se tienen que crear dos archivos con el mismo nombre pero con diferentes extensiones
 * Un archivo con la extension led.ino que contiene el programa principal y el segundo led.S que contiene el codigo en ensamblador
