@@ -4,9 +4,9 @@
 
 Las instrucciones como digitalWrite cuando se ejecutan generan un tiempo de retraso en el programa mientras que utilizando el lenguaje ensamblador este tiempo se reduce bastante ademas que la memoria donde se almacena el sketch del programa es mucho menor, utilizar ensamblador es util cuando se necesite procesar datos muy velozmente y tambien cuando se necesite una respuesta rapida como por ejemplo en la comunicacion serial o otras.
 
-* Se tienen que crear dos archivos con el mismo nombre pero con diferentes extensiones
+* Se tienen que crear dos archivos con el mismo nombre con diferentes extensiones
 * Un archivo con la extension led.ino que contiene el programa principal y el segundo led.S que contiene el codigo en ensamblador
-* La extension de led.S es en mayusculas en caso que se escriba en minusculas no reconocera el archivo 
+* La extension de led.S debe ser en mayusculas en caso que se escriba en minusculas no compilara el archivo 
 
 # Codigo principal (led.ino)
 ```c++
