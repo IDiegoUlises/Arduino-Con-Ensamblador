@@ -6,7 +6,7 @@ Que ventajas tiene escribir codigo en ensamblador las principales ventajas es qu
 
 * Se tienen que crear dos archivos con el mismo nombre pero con diferentes extensiones
 * Un archivo con la extension led.ino que contiene el programa principal y el segundo led.S que contiene el codigo en ensamblador
-* importante led.S la extension es en mayusculas en caso que se escriba en minusculas no reconocera el archivo 
+* La extension de led.S es en mayusculas en caso que se escriba en minusculas no reconocera el archivo 
 
 # Codigo principal ino
 ```c++
