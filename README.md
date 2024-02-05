@@ -6,7 +6,7 @@ Que ventajas tiene escribir codigo en ensamblador, las principales ventajas es q
 * Un archivo con la extension led.ino que contiene el programa principal y el segundo led.S que contiene el codigo en ensamblador
 * importante led.S la extension es en mayusculas en caso que se escriba en minusculas no reconocera el archivo 
 
-# Codigo ino
+# Codigo principal ino
 ```c++
 //Codigo en C para parpadeo de un led
 extern "C"
@@ -27,7 +27,7 @@ void loop()
 }
 ```
 
-# Codigo en ensamblador
+# Codigo en Ensamblador
 ```c++
 ;---------------
 ;Codigo en Ensamblador
