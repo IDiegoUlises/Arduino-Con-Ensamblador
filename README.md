@@ -72,3 +72,6 @@ innerLoop:
     RET
 ;---------------------------------------------------------------------------
 ```
+
+### Funcionamiento
+![](https://github.com/IDiegoUlises/Arduino-Con-Ensamblador/blob/main/imagenes/Arduino-Con-Ensamblador.gif)
