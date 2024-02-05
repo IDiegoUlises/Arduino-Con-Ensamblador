@@ -2,7 +2,7 @@
 
 <img src="https://github.com/IDiegoUlises/Arduino-Con-Ensamblador/blob/main/imagenes/Comparacion-de-memoria.png" />
 
-Las instrucciones como digitalWrite cuando se ejecutan generan un tiempo de retraso en el programa mientras que utilizando el lenguaje ensamblador este tiempo se reduce bastante ademas que la memoria donde se almacena el sketch del programa se reduce, utilizar ensamblador es util cuando se necesite escribir un programa muy grande y tambien cuando se necesite una respuesta rapida como por ejemplo en la comunicacion serial o otras.
+Las instrucciones como digitalWrite cuando se ejecutan generan un tiempo de retraso en el programa mientras que utilizando el lenguaje ensamblador este tiempo se reduce bastante ademas que la memoria donde se almacena el sketch del programa se reduce, utilizar ensamblador es util cuando se necesite escribir un programa muy extenso y tambien cuando se necesite una respuesta rapida como por ejemplo en la comunicacion serial o otras.
 
 * Se tienen que crear dos archivos con el mismo nombre con diferentes extensiones
 * Un archivo con la extension led.ino que contiene el programa principal y el segundo led.S que contiene el codigo en ensamblador
